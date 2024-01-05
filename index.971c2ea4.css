@@ -1,0 +1,239 @@
+html {
+  font-family: Roboto, sans-serif;
+}
+
+body, h2, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  grid-template-columns: 200px;
+  justify-content: center;
+  gap: 46px 48px;
+  padding: 50px 40px;
+  display: grid;
+}
+
+@media (width >= 488px) {
+  .container {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+.nav__list {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav__link {
+  color: #060b35;
+  text-transform: uppercase;
+  padding: 23px 0;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.nav__link.is-active, .nav__link:hover {
+  color: #00acdc;
+}
+
+.nav__link.is-active:after {
+  content: "";
+  background-color: #00acdc;
+  border-radius: 8px;
+  width: 100%;
+  height: 4px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.is-active {
+  position: relative;
+}
+
+.card {
+  padding: 32px 0 16px;
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  width: 200px;
+  padding-inline: 16px;
+  transition: transform .3s, color .3s, background .3s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card__img {
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 134px;
+  margin: 0 auto 40px;
+  display: flex;
+}
+
+.card__description {
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 16px;
+  display: flex;
+}
+
+.card__title {
+  color: #060b35;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.card:hover .card__title {
+  color: #34568b;
+}
+
+.card__code {
+  color: #616070;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card__reviews {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.card__reviews-count {
+  color: #060b35;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  display: block;
+}
+
+.card__price {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.card__price-text {
+  color: #616070;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card__dollar {
+  color: #060b35;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.card__button {
+  color: #fff;
+  text-transform: uppercase;
+  background: #00acdc;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 40px;
+  padding-block: 12px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+  transition: background .3s, color .3s;
+  display: block;
+}
+
+.card:hover .card__button {
+  color: #00acdc;
+  background: #fff;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+}
+
+.header {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars__star {
+  background-image: url("star.fa806e3c.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.stars__star:last-child {
+  margin-right: 0;
+}
+
+.stars--1 .stars__star:nth-child(-n+1), .stars--2 .stars__star:nth-child(-n+2), .stars--3 .stars__star:nth-child(-n+3), .stars--4 .stars__star:nth-child(-n+4), .stars--5 .stars__star:nth-child(-n+5) {
+  background-image: url("star-active.2be54011.svg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
